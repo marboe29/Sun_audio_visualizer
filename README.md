@@ -1,1 +1,3 @@
-# Sun_music_visualizer
+##Web audio api
+
+######Part of a bigger project that will run time & freq data
