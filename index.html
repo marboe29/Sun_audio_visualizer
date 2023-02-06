@@ -5,30 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Viz</title>
-
-    <!-- jQuery CDN -->
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-   
-    <link rel="stylesheet" href="style.css"/>
+    <title>Triple Audio Visualisation</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 
 </head>
 
 <body>
     
-    <div id="content">
-      <canvas id="canvas"></canvas>
-    </div>
+  <div id="container">
+    <div>
+        <canvas id="canvasRain"></canvas>
+      </div>
 
-    <audio id="myAudio">
-      <source src="music.mp3" type="audio/mp3">
-    </audio>
+      <div>
+        <canvas id="canvasSun"></canvas>
+      </div>
 
-    <button id="oneButton" type="button">play/stop</button>
+      <div>
+        <canvas id="canvasLand"></canvas>
+      </div>
+  </div>
+
+      <audio id="audio">
+        <source src="music/Sugar.mp3" type="audio/mp3">
+      </audio>
+
+      <button id="userButton" type="button" onclick="userGest()">Start</button>
 
 </body>
 
-  <script src="back.js"></script>
+    <script src="back.js"></script>
     
 </html>
